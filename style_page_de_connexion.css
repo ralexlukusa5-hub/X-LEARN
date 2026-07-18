@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #071120;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#hero {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    width: 420px;
+    border-radius: 20px;
+}
+
+.hero h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Conteneur : input + icône sur la MÊME ligne */
+.input-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0 20px;
+    border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+}
+
+.input-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 15px 10px 15px 0;
+    font-size: 1rem;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box i {
+    color: white;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.remember-forgot a, .create a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.remember-forgot a:hover, .create a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.5s;
+    background-color: #2563EB;
+    color: white;
+}
+
+.login-btn:hover {
+    opacity: 0.7;
+    color: white;
+    border: 2px solid white;
+    
+}
+
+.create {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    font-size: 14px;
+}
+
+@media (max-width: 520px) {
+    body {
+        min-height: 100vh;
+        height: auto;
+        padding: 24px 16px;
+    }
+
+    #hero {
+        width: 100%;
+        max-width: 420px;
+        padding: 24px 18px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .input-box {
+        padding: 0 16px;
+    }
+}
+

@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg: #071120;
+    --surface: #0D1B2A;
+    --primary: #2563EB;
+    --primary-light: #4DA3FF;
+    --text: #ffffff;
+    --muted: #C9D4E5;
+    --line: rgba(255, 255, 255, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 95px;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
+    padding-top: 95px;
+}
+
+a {
+    color: inherit;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    min-height: 95px;
+    padding: 0 50px;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 170px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 150px;
+    display: block;
+}
+
+.nav-links {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: var(--primary);
+    transform: translateY(-5px);
+}
+
+.nav-links .profile-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background: #2566f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 700px;
+    transition: 0.3s;
+}
+
+.nav-links .profile-icon:hover {
+    background: #4DA3FF;
+    border-radius: 50%;
+    transform: translateY(-5px);
+}
+
+/* Hero */
+.hero {
+    width: 80%;
+    min-height: calc(90vh - 95px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.hero-txt {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-txt h1 {
+    font-size: 75px;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.txt-hero {
+    width: 500px;
+    max-width: 100%;
+    margin-top: 20px;
+    color: var(--muted);
+    line-height: 1.6;
+    font-size: 22px;
+}
+
+.hero-button {
+    width: 500px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boutton-hero {
+    margin-top: 30px;
+    padding: 15px 28px;
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    color: var(--text);
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.boutton-hero:hover {
+    background: rgba(37, 99, 235, 0.15);
+}
+
+.stats {
+    width: 500px;
+    max-width: 100%;
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: center;
+}
+
+.stats strong {
+    font-size: 1.45rem;
+}
+
+.stats span {
+    display: block;
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 0.86rem;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+/* Sections */
+#cours,
+#a_propos,
+.prq,
+#contacts,
+#faq {
+    width: 90%;
+    margin: 100px auto;
+}
+
+#cours {
+    margin-top: 40px;
+}
+
+.section-title,
+.titres {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Cours */
+.cours-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10x;
+}
+
+.cours-card {
+    width: 450px;
+    background: var(--surface);
+    padding: 35px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.cours-card:hover {
+    transform: translateY(-10px);
+}
+
+.cours-icon {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left:170px;
+    display: flex;
+    justify-content: center;
+    color: #037cf5;
+    font-size: 40px;
+}
+
+.cours-card h3 {
+    margin-bottom: 15px;
+    color: var(--primary-light);
+    text-align: center;
+}
+
+.cours-card p {
+    margin-bottom: 20px;
+    color: var(--muted);
+    line-height: 1.7;
+    text-align: center;
+}
+
+.cours-card button,
+.card-btn {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary);
+    color: var(--text);
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cours-card button:hover,
+.card-btn:hover {
+    opacity: 0.7;
+}
+
+/* A propos */
+.txt-ap {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: var(--muted);
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Pourquoi */
+.prq-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.prq-item {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 26px;
+}
+
+.prq-item span {
+    display: block;
+    margin-bottom: 28px;
+    color: var(--primary-light);
+    font-weight: 700;
+}
+
+.prq-item h3 {
+    margin-bottom: 12px;
+}
+
+.prq-item p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* Contacts */
+.icones-contacts {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.icones-contacts a {
+    color: var(--text);
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.icones-contacts a:hover {
+    color: var(--primary);
+    transform: translateY(-5px);
+}
+
+/* FAQ */
+.faq-form {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 35px 40px;
+    background: var(--bg);
+    border: 2px solid var(--line);
+    border-radius: 12px;
+}
+
+.faq-form label {
+    display: block;
+    margin-bottom: 14px;
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.faq-form input,
+.faq-form textarea {
+    width: 100%;
+    margin-bottom: 26px;
+    padding: 20px 22px;
+    border: 1px solid #D9E2F0;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+}
+
+.faq-form input::placeholder,
+.faq-form textarea::placeholder {
+    color: #6B7280;
+}
+
+.faq-form input:focus,
+.faq-form textarea:focus {
+    border-color: var(--primary);
+}
+
+.faq-form textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.faq-form button {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary);
+    color: var(--text);
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.faq-form button:hover {
+    background: var(--primary-light);
+}
+
+/* Footer */
+footer {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 30px 24px;
+    border-top: 1px solid var(--line);
+    text-decoration-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+footer a {
+    color: var(--primary-light);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 0 28px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero {
+        width: 90%;
+        gap: 50px;
+    }
+
+    .hero-txt h1 {
+        font-size: 58px;
+    }
+
+    .hero-image img {
+        height: 430px;
+    }
+
+    .cours-card {
+        width: 380px;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        scroll-padding-top: 145px;
+    }
+
+    body {
+        padding-top: 145px;
+    }
+
+    .navbar {
+        min-height: 145px;
+        padding: 12px 20px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    .logo img {
+        width: 110px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .nav-links .profile-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 45px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-txt {
+        text-align: center;
+    }
+
+    .hero-txt h1 {
+        font-size: 42px;
+    }
+
+    .txt-hero,
+    .hero-button,
+    .stats {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .txt-hero {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .stats {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        height: auto;
+        max-height: 380px;
+    }
+
+    #cours,
+    #a_propos,
+    .prq,
+    #contacts,
+    #faq {
+        width: 92%;
+        margin: 70px auto;
+    }
+
+    .cours-card {
+        width: min(100%, 420px);
+    }
+
+    .prq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-form {
+        padding: 26px 22px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 560px) {
+    html {
+        scroll-padding-top: 180px;
+    }
+
+    body {
+        padding-top: 180px;
+    }
+
+    .navbar {
+        min-height: 180px;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .hero-txt h1 {
+        font-size: 34px;
+    }
+
+    .txt-hero {
+        font-size: 16px;
+    }
+
+    .boutton-hero,
+    .card-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-button {
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .section-title,
+    .titres {
+        font-size: 28px;
+    }
+
+    .cours-card,
+    .prq-item {
+        padding: 24px 18px;
+    }
+
+    .faq-form input,
+    .faq-form textarea {
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    .faq-form button {
+        font-size: 18px;
+    }
+}
