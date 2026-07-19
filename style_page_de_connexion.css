@@ -25,7 +25,7 @@ body {
     border-radius: 20px;
 }
 
-.hero h1 {
+#hero h1 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
@@ -124,7 +124,7 @@ body {
         padding: 24px 18px;
     }
 
-    .hero h1 {
+    #hero h1 {
         font-size: 26px;
     }
 

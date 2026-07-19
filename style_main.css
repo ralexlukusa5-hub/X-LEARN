@@ -417,6 +417,16 @@ footer a {
     text-decoration: none;
 }
 
+.retour-footer {
+    text-decoration-color: none;
+    color: white;
+}
+
+.retour-footer:hover  {
+    text-decoration: underline;
+}
+
+
 /* Responsive */
 @media (max-width: 1200px) {
     .navbar {

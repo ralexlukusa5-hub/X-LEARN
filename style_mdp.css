@@ -31,6 +31,10 @@ section h1 {
     margin-bottom: 20px;
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 .input-box {
     display: flex;
     flex-direction: row;
