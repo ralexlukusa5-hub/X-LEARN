@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physique</title>
     <link rel="stylesheet" href="style_physique.css">
+    <link rel="stylesheet" href="features.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="shortcut icon" href="../Images/Logo X-LEARN.png">
+    <link rel="shortcut icon" href="Images/Logo X-LEARN.png">
 </head>
 
 <body>
     <nav>
         <div class="navbar">
             <div class="logo">
-                <img src="../Images/Logo X-LEARN.png" alt="Logo X-Learn">
+                <img src="Images/Logo X-LEARN.png" alt="Logo X-Learn">
             </div>
 
             <div class="recherche">
@@ -23,7 +24,7 @@
         </div>
     </nav>
 
-    <section class="liste-cours">
+    <section id="liste-cours" class="liste-cours">
         <h1 class="titre">PHYSIQUE</h1>
 
         <article class="chapitre-card">
@@ -33,11 +34,38 @@
             </div>
 
             <div class="chapitre-actions">
-                <a href="../Cours/Thermodynamique (4H.SC) - Cours.pdf" class="btn">Cours</a>
-                <a href="../Cours/Thermodynamique (4H.SC) - Exercices.pdf" class="btn btn-outline">Exercices</a>
+                <a href="Cours/Thermodynamique (4H.SC) - Cours.pdf" class="btn">Cours</a>
+                <a href="Cours/Thermodynamique (4H.SC) - Exercices.pdf" class="btn btn-outline">Exercices</a>
+            </div>
+        </article>
+
+        <article class="chapitre-card">
+            <div class="chapitre-texte">
+                <h3>Tensions mécaniques</h3>
+                <p>Découvrez les concepts fondamentaux des tensions mécaniques et comprenez le comportement des matériaux soumis à différentes sollicitations.</p>
+            </div>
+
+            <div class="chapitre-actions">
+                <a href="Cours/Tensions mécaniques (4H.SC) - Cours.pdf" class="btn">Cours</a>
+            </div>
+        </article>
+
+        <article class="chapitre-card">
+            <div class="chapitre-texte">
+                <h3>Cinématique des mouvements rectilignes</h3>
+                <p>Maîtrisez les notions essentielles de la cinématique des mouvements rectilignes à travers des explications claires, des exemples concrets et des exercices pratiques.</p>
+            </div>
+
+            <div class="chapitre-actions">
+                <a href="Cours/Cinématique des mouvements rectilignes (4H.SC) - Cours.pdf" class="btn">Cours</a>
+                <a href="Cours/Cinématique des mouvements rectilignes (4H.SC) - Exercices.pdf" class="btn btn-outline">Exercices</a>
             </div>
         </article>
     </section>
-    <script src="../script.js"></script>
+    <!-- footer -->
+    <footer>
+      <a class="retour-footer" href="#liste-cours">Retour en haut</a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

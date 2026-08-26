@@ -7,6 +7,7 @@
 
     <!-- lien css -->
     <link rel="stylesheet" href="style_page_d_inscription.css">
+    <link rel="stylesheet" href="features.css">
     <!-- lien icones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- lien favicon-->
@@ -14,30 +15,43 @@
 </head>
 
 <body>
-    <section>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar">
+                <img class="logo" src="Images/Logo X-LEARN.png" alt="Logo X-LEARN">
+        </nav>
+    </header>
+    <section id="hero">
         <h1>INSCRIPTION</h1>
+        <form class="login-box" data-form="inscription">
         <div class="input-box">
-            <input type="text" placeholder="email">
+            <input type="email" name="email" placeholder="email" required autocomplete="email">
             <i class="fa-solid fa-envelope"></i>
         </div>
 
         <div class="input-box">
-            <input type="text" placeholder="Nom d'utilisateur">
+            <input type="text" name="username" placeholder="Nom d'utilisateur" required autocomplete="username">
             <i class="fa-solid fa-user"></i>
         </div>
 
         <div class="input-box">
-            <input type="password" placeholder="Entrez un mot de passe">
+            <input type="password" name="password" placeholder="Entrez un mot de passe" required minlength="4" autocomplete="new-password">
             <i class="fa-solid fa-lock"></i>
         </div>
 
         <div class="input-box">
-            <input type="password" placeholder="Confirmez le mot de passe">
+            <input type="password" name="passwordConfirm" placeholder="Confirmez le mot de passe" required minlength="4" autocomplete="new-password">
             <i class="fa-solid fa-lock"></i>
         </div>
 
-        <button class="login-btn">Créer un compte</button>
-
+        <p class="form-message" aria-live="polite"></p>
+        <button class="login-btn" type="submit">Créer un compte</button>
+    </form>
     </section>
+    <!-- footer -->
+    <footer>
+      <a class="retour-footer" href="#hero">Retour en haut</a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

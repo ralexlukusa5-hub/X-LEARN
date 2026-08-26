@@ -11,9 +11,19 @@ body {
     background-color: #071120;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 95px;
+}
+
+.logo{
+    width: 150px;
 }
 
 section {
@@ -105,6 +115,33 @@ section h1 {
     color: white;
     border: 2px solid white;
     
+}
+
+footer {
+    max-width: 1180px;
+    margin: 20px;
+    padding: 30px 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-decoration-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+footer a {
+    color: #4DA3FF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.retour-footer {
+    text-decoration-color: none;
+    color: white;
+}
+
+.retour-footer:hover  {
+    text-decoration: underline;
 }
 
 @media (max-width: 520px) {

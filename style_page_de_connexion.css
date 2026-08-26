@@ -7,14 +7,24 @@
     font-family: "Poppins", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 95px;
+}
+
 body {
     background-color: #071120;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+.logo{
+    width: 150px;
+}
+
 
 #hero {
     background-color: transparent;
@@ -50,7 +60,7 @@ body {
     outline: none;
     background-color: transparent;
     color: white;
-    padding: 15px 10px 15px 0;
+    padding: 15px 0 15px 10px;
     font-size: 1rem;
 }
 
@@ -62,6 +72,11 @@ body {
     color: white;
     font-size: 1rem;
     flex-shrink: 0;
+    align-items: end;
+}
+
+.fa-solid {
+    text-align: end;
 }
 
 .remember-forgot {
@@ -109,6 +124,33 @@ body {
     margin-top: 25px;
     color: white;
     font-size: 14px;
+}
+
+footer {
+    max-width: 1180px;
+    margin: 20px;
+    padding: 30px 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-decoration-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+footer a {
+    color: var(--primary-light);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.retour-footer {
+    text-decoration-color: none;
+    color: white;
+}
+
+.retour-footer:hover  {
+    text-decoration: underline;
 }
 
 @media (max-width: 520px) {

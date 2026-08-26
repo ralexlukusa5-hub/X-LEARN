@@ -13,6 +13,11 @@ body {
     padding-top: 95px;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 95px;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -172,6 +177,33 @@ body {
     text-align: center;
     color: #C9D4E5;
     font-weight: 700;
+}
+
+footer {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 30px 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-decoration-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+footer a {
+    color: #4DA3FF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.retour-footer {
+    text-decoration-color: none;
+    color: white;
+}
+
+.retour-footer:hover  {
+    text-decoration: underline;
 }
 
 @media (max-width: 800px) {

@@ -1,0 +1,17 @@
+/* Fonctions communes : favoris et formulaires locaux. */
+
+.favori-btn.is-favori { background: #2563EB; color: #fff; }
+
+.form-message {
+    min-height: 22px;
+    margin: -8px 0 16px;
+    color: #9ed0ff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.favoris-liste { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.favori-item { padding: 18px; border-radius: 12px; background: #0D1B2A; }
+.favori-item a { color: #4DA3FF; font-weight: 700; }
+.favori-item p { margin: 8px 0 0; color: #C9D4E5; }
+.favoris-vides { color: #C9D4E5; text-align: center; }

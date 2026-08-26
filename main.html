@@ -1,3 +1,4 @@
+<!-- metadonnées -->
 <!Doctype html>
 <html lang="fr">
   <head>
@@ -7,8 +8,10 @@
 
     <!-- lien css -->
     <link rel="stylesheet" href="style_main.css" />
+    <link rel="stylesheet" href="features.css" />
+    <link rel="stylesheet" href="features.css" />
     <!-- lien favicon -->
-    <link rel="shortcut icon" href="./"/>
+    <link rel="shortcut icon" href="Images/Logo X-LEARN.png"/>
     <!-- lien pour ajouter des icones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
   </head>
@@ -27,8 +30,10 @@
           <li><a href="#a_propos">À propos</a></li>
           <li><a href="#contacts">Contacts</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <a href="page_de_connexion.html" target="_blank" class="profile-icon" aria-label="Profil"><i class="fa-solid fa-user"></i></a>
         </ul>
+
+          <!-- icone page de connexion-->
+          <a href="page_de_connexion.html" target="_blank" class="profile-icon"><i class="fa-solid fa-user"></i></a>
       </nav>
     </header>
 
@@ -76,46 +81,41 @@
       </div>
     </section>
 
-    <!-- COURS -->
+    <!-- cours -->
     <section id="cours">
       <h1 class="section-title">Cours</h1>
 
-      <!-- Grand conteneur cours -->
+      <!-- grand conteneur cours -->
       <div class="cours-container">
-        <!-- Petit conteneur cours math -->
+        <!-- petit conteneur cours Maths -->
         <div class="cours-card">
-          <i
-            class="fa-solid fa-square-root-variable cours-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa-solid fa-square-root-variable cours-icon"></i>
           <h3>Mathématiques</h3>
           <p>Algèbre, probabilités et exercices pratiques.</p>
-          <a href="maths.html" class="card-btn"><strong>Voir plus</strong></a>
+          <a href="maths.html" target="_blank" class="card-btn"><strong>Voir plus</strong></a>
         </div>
 
-        <!-- Petit conteneur cours Physique -->
+        <!-- petit conteneur cours Physique -->
         <div class="cours-card">
           <i class="fa-solid fa-atom cours-icon" aria-hidden="true"></i>
           <h3>Physique</h3>
           <p>Électricité, thermodynamique, énergie et mouvements.</p>
-          <a href="physique.html" class="card-btn"
-            ><strong>Voir plus</strong></a
-          >
+          <a href="physique.html" target="_blank" class="card-btn"><strong>Voir plus</strong></a>
         </div>
 
-        <!-- Petit conteneur cours Informatique -->
+        <!-- petit conteneur cours Informatique -->
         <div class="cours-card">
           <i class="fa-solid fa-code cours-icon" aria-hidden="true"></i>
           <h3>Informatique</h3>
-          <p>HTML-CSS, Alorithmique et Architectures des ordinateurs et Reseaux Informatique.</p>
-          <a href="informatique.html" class="card-btn"
+          <p>HTML-CSS, Algorithmique et Architecture des ordinateurs et Reseaux Informatique.</p>
+          <a href="informatique.html" target="_blank" class="card-btn"
             ><strong>Voir plus</strong></a
           >
         </div>
       </div>
     </section>
 
-    <!-- A PROPOS -->
+    <!-- a propos -->
     <section id="a_propos">
       <h1 class="section-title">À Propos de nous</h1>
       <p class="txt-ap">
@@ -134,12 +134,12 @@
       </p>
     </section>
 
-    <!-- Pourquoi X-LEARN ? -->
+    <!-- pourquoi X-LEARN ? -->
     <section class="prq">
       <h1 class="titres">Pourquoi X-LEARN ?</h1>
 
       <div class="prq-grid">
-        <!-- Grid 1 -->
+        <!-- grid 1 -->
         <div class="prq-item">
           <span>01</span>
           <h3>Un espace pensé pour les élèves Congolais</h3>
@@ -149,14 +149,14 @@
           </p>
         </div>
 
-        <!-- Grid 2 -->
+        <!-- grid 2 -->
         <div class="prq-item">
           <span>02</span>
           <h3>Exercices et résolutions guidés</h3>
           <p>Des questions progressives avec corrections et explications.</p>
         </div>
 
-        <!-- Grid 3 -->
+        <!-- grid 3 -->
         <div class="prq-item">
           <span>03</span>
           <h3>Apprentissage à votre rythme</h3>
@@ -168,28 +168,28 @@
       </div>
     </section>
 
-    <!-- CONTACTS -->
+    <!-- contacts -->
     <section id="contacts">
       <h1 class="section-title">Contacts</h1>
 
+      <!-- icones de contacts -->
       <div class="icones-contacts">
-        <a href="https://github.com/ralexlukusa5-hub" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="mailto:ralexlukusa5@gmail.com"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
+        <!-- icones github -->
+        <a href="https://github.com/ralexlukusa5-hub" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <!-- icones mail -->
+        <a href="mailto:ralexlukusa5@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <!-- icones telephone -->
         <a href="tel:+243 813 175 506"><i class="fa-solid fa-phone"></i></a>
       </div>
     </section>
 
-    <!-- faq -->
+    <!-- formulaire faq -->
     <section id="faq">
       <h1 class="section-title">FAQ</h1>
 
       <form class="faq-form">
         <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" placeholder="Ralex Lukusa" />
+        <input type="text" id="nom" name="nom" placeholder="Ralex Lukusa"/>
 
         <label for="email">e-mail</label>
         <input type="email" id="email" name="email" placeholder="ralexlukusa@gmail.com"/>
@@ -201,9 +201,11 @@
       </form>
     </section>
 
+    <!-- footer -->
     <footer>
-      <p>© 2026 X-LEARN. Tous droits réservés.</p>
       <a class="retour-footer" href="#hero">Retour en haut</a>
     </footer>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

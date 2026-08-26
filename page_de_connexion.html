@@ -7,6 +7,7 @@
 
     <!-- lien css -->
     <link rel="stylesheet" href="style_page_de_connexion.css">
+    <link rel="stylesheet" href="features.css">
     <!-- lien icones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- lien favicon-->
@@ -14,29 +15,43 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <img class="logo" src="Images/Logo X-LEARN.png"/>
+        </nav>
+    </header>
 
     <section id="hero">
         <h1>CONNEXION</h1>
-        <div class="input-box">
-            <input type="text" placeholder="Nom d'utilisateur">
-            <i class="fa-solid fa-user"></i>
+        <form class="login-box" data-form="connexion">
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Nom d'utilisateur" required autocomplete="username">
+                <i class="fa-solid fa-user"></i>
         </div>
 
         <div class="input-box">
-            <input type="password" placeholder="Mot de passe">
-            <i class="fa-solid fa-lock"></i>
+                <input type="password" name="password" placeholder="Mot de passe" required autocomplete="current-password">
+                <i class="fa-solid fa-lock"></i>
         </div>
-
-        <div class="remember-forgot">
-            <label><input name="souvenir" type="checkbox">  Se souvenir de moi</label>
-            <a href="Mdp.html">Mot de passe oublié ?</a>
-        </div>
-
-        <button class="login-btn">Se connecter</button>
-
-        <div class="create">
-            <a href="page_d_inscription.html" target="_blank">Créer un compte</a>
-        </div>
+            
+            <div class="remember-forgot">
+                <label><input name="souvenir" type="checkbox">  Se souvenir de moi</label>
+                <a href="Mdp.html">Mot de passe oublié ?</a>
+            </div>
+            
+            <p class="form-message" aria-live="polite"></p>
+            <button class="login-btn" type="submit">Se connecter</button>
+            
+            <div class="create">
+                <a href="page_d_inscription.html">Créer un compte</a>
+            </div>
+        </form>
     </section>
+    
+    <!-- footer -->
+    <footer>
+        <a class="retour-footer" href="#hero">Retour en haut</a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
